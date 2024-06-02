@@ -11,6 +11,8 @@ The following portions are subject to a different copyright:
 - Map logic code adapted from WinBolo's screencalc.c, © 1999-2008 John Morrison. Adapted with permission under MIT license.
 - Pyqtree, © 2018 Karim Bahgat and used under MIT license.
 
+<img src="PyBoloDemo.gif" alt="Demo Video"/>
+
 # README
 ## PyBolo 0.99.0 (beta release 1)
 An enhanced, modern, cross-platform implementation of the classic multiplayer tank game, Bolo.
