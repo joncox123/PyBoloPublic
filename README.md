@@ -13,9 +13,8 @@ The following portions are subject to a different copyright:
 
 <img src="PyBoloDemo.gif" alt="Demo Video"/>
 
-# README
+# README and FAQ
 ## PyBolo 0.99.0 (beta release 1)
-An enhanced, modern, cross-platform implementation of the classic multiplayer tank game, Bolo.
 
 ## How can I test PyBolo?
 If there is an active server running on the Tracker, you can simply open the PyBolo app and select the server from the list. However, you will need at least one other player to join before you can play. 
