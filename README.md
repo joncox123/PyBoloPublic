@@ -1,4 +1,5 @@
 <img src="logo.png" alt="Bolo game logo"/>
+
 # PyBolo
 An enhanced, modern, cross-platform implementation of the classic multiplayer tank game, [Bolo](https://en.wikipedia.org/wiki/Bolo_(1987_video_game)).
 
