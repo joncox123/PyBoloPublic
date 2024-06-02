@@ -3,6 +3,8 @@ An enhanced, modern, cross-platform implementation of the classic multiplayer ta
 
 Download the latest [release](https://github.com/joncox123/PyBoloPublic/releases) and check out the **[tracker website](http://pybolo.com)**.
 
+### BEFORE PLAYING, MAKE SURE TO **[READ THE README!](README.txt)**
+
 ### License information:
 PyBolo © Copyright 2024 Jonathan Cox, all rights reserved.
 
