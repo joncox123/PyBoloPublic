@@ -1,7 +1,7 @@
 # PyBolo
 An enhanced, modern, cross-platform implementation of the classic multiplayer tank game, [Bolo](https://en.wikipedia.org/wiki/Bolo_(1987_video_game)).
 
-Check out the **[tracker website](http://pybolo.com)**.
+Download the latest [release](https://github.com/joncox123/PyBoloPublic/releases) and check out the **[tracker website](http://pybolo.com)**.
 
 ### License information:
 PyBolo © Copyright 2024 Jonathan Cox, all rights reserved.
