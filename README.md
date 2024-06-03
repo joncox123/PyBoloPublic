@@ -23,6 +23,8 @@ If there is an active server running on the Tracker, you can simply open the PyB
 
 If you just want to test it out by yourself, I suggest the following procedure. First, unzip two separate copies of PyBolo into separate directories. Launch the Server app from one of them. Then launch the PyBolo client app from one directory using the command line with: PyBolo.exe pybolo://127.0.0.1:60805, where the syntax is <app path> pybolo://<hostname>:<port> to connect to. Do this as well for PyBolo in the other directory.
 
+Alternatively, you could open two copies of the app and connect both to the server on the Tracker, instead of running your own server. This is equivalent to the practice mode in Bolo.
+
 ## How can I submit bug or feature requests?
 Please create new "Issues" on this GitHub page. Keep in mind, I will read all of the feature requests, but I probably won't implement many of them because the goals are mainly: (1) simplicity; (2) stability; (3) accessibility to new and experienced players; (4) deep learning AI bots!
 
@@ -33,6 +35,11 @@ Chat in PyBolo works like Doom or Quake. You can chat in the lobby, after the ga
 To change certain settings, including the key map, please open the following file in a text editor:
   ./_internal/PyBoloConfig.json
 See the end of this README for the key names.
+
+## How can I host my own server?
+To host a public server, your router needs to be configured to forward the server's listening port to the machine running your server. While PyBolo has support for UPnP to do this automatically, it's turned off by default in the settings because it doesn't seem to work reliably, mostly because UPnP itself is poorly designed.
+
+Regardless, the best method for port forwarding is to configure your router for "virtual server" or port forwarding by setting it to forward the TCP port used in the settings to the IP address of the machine running the server. Typically, this option is found in the WAN or LAN options of your router. The default port is 60805, over TCP. You should also give your machine a static IP on your network so that you don't need to reconfigure this setting.
 
 ## Which operating systems can PyBolo run on?
 PyBolo is written in Python, so it can run on almost any system, in principle. That said, I've tested it thus far on: Windows 10, Windows 11, macOS Big Sur (Intel), macOS Sonoma (arm64, Apple chip), Linux (Ubuntu 22.04 x86) and Android 14 on a Pixel 8 Pro. While iOS is theoretically possible, it will take more work and some of the tools (e.g. kivy) seem to have some issues currently. 
