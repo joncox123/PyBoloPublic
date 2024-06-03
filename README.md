@@ -21,10 +21,10 @@ The following portions are subject to a different copyright:
 ## How can I test PyBolo?
 If there is an active server running on the Tracker, you can simply open the PyBolo app and select the server from the list. However, you will need at least one other player to join before you can play. 
 
+If you just want to test it out by yourself, I suggest the following procedure. First, unzip two separate copies of PyBolo into separate directories. Launch the Server app from one of them. Then launch the PyBolo client app from one directory using the command line with: PyBolo.exe pybolo://127.0.0.1:60805, where the syntax is <app path> pybolo://<hostname>:<port> to connect to. Do this as well for PyBolo in the other directory.
+
 ## How can I submit bug or feature requests?
 Please create new "Issues" on this GitHub page. Keep in mind, I will read all of the feature requests, but I probably won't implement many of them because the goals are mainly: (1) simplicity; (2) stability; (3) accessibility to new and experienced players; (4) deep learning AI bots!
-
-If you just want to test it out by yourself, I suggest the following procedure. First, unzip two separate copies of PyBolo into separate directories. Launch the Server app from one of them. Then launch the PyBolo client app from one directory using the command line with: PyBolo.exe pybolo://127.0.0.1:60805, where the syntax is <app path> pybolo://<hostname>:<port> to connect to. Do this as well for PyBolo in the other directory.
 
 ## How can I chat in PyBolo, especially in the lobby?
 Chat in PyBolo works like Doom or Quake. You can chat in the lobby, after the game, or during the game. Pressing the "T" key will allow you to enter a chat for all players to see. Pressing "Y" will only send a chat to players on your team. Press ENTER to send the chat, or ESC to cancel. 
