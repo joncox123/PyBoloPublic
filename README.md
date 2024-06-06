@@ -36,6 +36,9 @@ To change certain settings, including the key map, please open the following fil
   ./_internal/PyBoloConfig.json
 See the end of this README for the key names.
 
+## How do you win a game in PyBolo?
+One of the long standing issues with Bolo is that it never offered an end-of-game state. This may be fine for closely knit groups or LAN parties, but it's a practical problem for modern play over the internet amongst people who don't necessarily know the game and each other well. As a result, it is currently possible to win in PyBolo by either taking control of all of the bases or pillboxes. Think of it like checkmate in chess, so protect your bases and pills.
+
 ## How can I host my own server?
 To host a public server, your router needs to be configured to forward the server's listening port to the machine running your server. While PyBolo has support for UPnP to do this automatically, it's turned off by default in the settings because it doesn't seem to work reliably, mostly because UPnP itself is poorly designed.
 
