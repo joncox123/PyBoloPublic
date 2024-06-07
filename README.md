@@ -16,7 +16,7 @@ The following portions are subject to a different copyright:
 <img src="PyBoloDemo.gif" alt="Demo Video"/>
 
 # README and FAQ
-## PyBolo 0.99.0 (beta release 1)
+## PyBolo 0.99.1 (beta release 2)
 
 ## How can I test PyBolo?
 If there is an active server running on the Tracker, you can simply open the PyBolo app and select the server from the list. However, you will need at least one other player to join before you can play. 
@@ -32,9 +32,9 @@ Please create new "Issues" on this GitHub page. Keep in mind, I will read all of
 Chat in PyBolo works like Doom or Quake. You can chat in the lobby, after the game, or during the game. Pressing the "T" key will allow you to enter a chat for all players to see. Pressing "Y" will only send a chat to players on your team. Press ENTER to send the chat, or ESC to cancel. 
 
 ## How can I change the default settings?
-To change certain settings, including the key map, please open the following file in a text editor:
+To set the key configuration, activate the menu in the game and click the Set Keys button. Hit the back arrow in the upper right to save your changes.
+However, to change other settings please open the following JSON file in a text editor, such as Notepad or similar:
   ./_internal/PyBoloConfig.json
-See the end of this README for the key names.
 
 ## How do you win a game in PyBolo?
 One of the long standing issues with Bolo is that it never offered an end-of-game state. This may be fine for closely knit groups or LAN parties, but it's a practical problem for modern play over the internet amongst people who don't necessarily know the game and each other well. As a result, it is currently possible to win in PyBolo by either taking control of all of the bases or pillboxes. Think of it like checkmate in chess, so protect your bases and pills.
@@ -77,147 +77,3 @@ The chat interface is also a drastic improvement over the original Bolo. It show
 Development of PyBolo began on April 12, 2024. PyBolo is 98% written from the ground up exclusively in Python 3, but obviously inspired by the original Bolo by Stuart Cheshire from 1987-1995, under permission. The server reads the original Bolo map format based on the source code from Stuart Cheshire's Bolo that was made public in the early 1990s. However, the map format used to transmit from the server to the clients is new, essentially a bunch of Numpy arrays that are gzip compressed (more efficient than the original Bolo format, and simpler to implement these days). The code that determines the map tiles was adapted from John Morrison's WinBolo screencalc.c under permission with the MIT license. It also uses the pyqtree library for the spatial index, which is provided under the MIT license. 
 
 At the present time, PyBolo is copyrighted by Jonathan Cox, all rights reserved and the code is not open source. That said, I intend to eventually release the code as open source once I figure out the path forward. In particular, hosting servers, especially if running AI bots, and publishing mobile apps costs money and I need to figure out how to make that work before releasing the source.
-
-## Custom Key Configuration Options
-
-In the PyBoloConfig.json file, you can change the "KEY_MAP" settings to the following possible keys. To open this file on the Mac app, you need to open the app container and find the _internals folder within.
-
-```
-https://www.pygame.org/docs/ref/key.html
-Constant      ASCII   Description
----------------------------------
-K_BACKSPACE   \b      backspace
-K_TAB         \t      tab
-K_CLEAR               clear
-K_RETURN      \r      return
-K_PAUSE               pause
-K_ESCAPE      ^[      escape
-K_SPACE               space
-K_EXCLAIM     !       exclaim
-K_QUOTEDBL    "       quotedbl
-K_HASH        #       hash
-K_DOLLAR      $       dollar
-K_AMPERSAND   &       ampersand
-K_QUOTE               quote
-K_LEFTPAREN   (       left parenthesis
-K_RIGHTPAREN  )       right parenthesis
-K_ASTERISK    *       asterisk
-K_PLUS        +       plus sign
-K_COMMA       ,       comma
-K_MINUS       -       minus sign
-K_PERIOD      .       period
-K_SLASH       /       forward slash
-K_0           0       0
-K_1           1       1
-K_2           2       2
-K_3           3       3
-K_4           4       4
-K_5           5       5
-K_6           6       6
-K_7           7       7
-K_8           8       8
-K_9           9       9
-K_COLON       :       colon
-K_SEMICOLON   ;       semicolon
-K_LESS        <       less-than sign
-K_EQUALS      =       equals sign
-K_GREATER     >       greater-than sign
-K_QUESTION    ?       question mark
-K_AT          @       at
-K_LEFTBRACKET [       left bracket
-K_BACKSLASH   \       backslash
-K_RIGHTBRACKET ]      right bracket
-K_CARET       ^       caret
-K_UNDERSCORE  _       underscore
-K_BACKQUOTE   `       grave
-K_a           a       a
-K_b           b       b
-K_c           c       c
-K_d           d       d
-K_e           e       e
-K_f           f       f
-K_g           g       g
-K_h           h       h
-K_i           i       i
-K_j           j       j
-K_k           k       k
-K_l           l       l
-K_m           m       m
-K_n           n       n
-K_o           o       o
-K_p           p       p
-K_q           q       q
-K_r           r       r
-K_s           s       s
-K_t           t       t
-K_u           u       u
-K_v           v       v
-K_w           w       w
-K_x           x       x
-K_y           y       y
-K_z           z       z
-K_DELETE              delete
-K_KP0                 keypad 0
-K_KP1                 keypad 1
-K_KP2                 keypad 2
-K_KP3                 keypad 3
-K_KP4                 keypad 4
-K_KP5                 keypad 5
-K_KP6                 keypad 6
-K_KP7                 keypad 7
-K_KP8                 keypad 8
-K_KP9                 keypad 9
-K_KP_PERIOD   .       keypad period
-K_KP_DIVIDE   /       keypad divide
-K_KP_MULTIPLY *       keypad multiply
-K_KP_MINUS    -       keypad minus
-K_KP_PLUS     +       keypad plus
-K_KP_ENTER    \r      keypad enter
-K_KP_EQUALS   =       keypad equals
-K_UP                  up arrow
-K_DOWN                down arrow
-K_RIGHT               right arrow
-K_LEFT                left arrow
-K_INSERT              insert
-K_HOME                home
-K_END                 end
-K_PAGEUP              page up
-K_PAGEDOWN            page down
-K_F1                  F1
-K_F2                  F2
-K_F3                  F3
-K_F4                  F4
-K_F5                  F5
-K_F6                  F6
-K_F7                  F7
-K_F8                  F8
-K_F9                  F9
-K_F10                 F10
-K_F11                 F11
-K_F12                 F12
-K_F13                 F13
-K_F14                 F14
-K_F15                 F15
-K_NUMLOCK             numlock
-K_CAPSLOCK            capslock
-K_SCROLLOCK           scrollock
-K_RSHIFT              right shift
-K_LSHIFT              left shift
-K_RCTRL               right control
-K_LCTRL               left control
-K_RALT                right alt
-K_LALT                left alt
-K_RMETA               right meta
-K_LMETA               left meta
-K_LSUPER              left Windows key
-K_RSUPER              right Windows key
-K_MODE                mode shift
-K_HELP                help
-K_PRINT               print screen
-K_SYSREQ              sysrq
-K_BREAK               break
-K_MENU                menu
-K_POWER               power
-K_EURO                Euro
-K_AC_BACK             Android back button
-```
