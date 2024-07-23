@@ -6,7 +6,7 @@ An enhanced, modern, cross-platform implementation of the classic multiplayer ta
 Download the latest [release](https://github.com/joncox123/PyBoloPublic/releases) and check out the **[tracker website](http://pybolo.com)**.
 
 ### Current Status
-- July 22, 2024: working on a standard tournament bot that will be used on the server to bootstrap multiplayer games. Thus far, I have implemented a C++ Python module that provides a custom A* bidirectional path planning (routing) algorithm. At the moment, I am creating the bot client and adding the logic.
+**July 22, 2024:** working on a standard tournament bot that will be used on the server to bootstrap multiplayer games. Thus far, I have implemented a C++ Python module that provides a custom A* bidirectional path planning (routing) algorithm. At the moment, I am creating the bot client and adding the logic.
 
 ### License information:
 PyBolo © Copyright 2024 Jonathan Cox, all rights reserved.
