@@ -6,7 +6,7 @@ An enhanced, modern, cross-platform implementation of the classic multiplayer ta
 Download the latest [release](https://github.com/joncox123/PyBoloPublic/releases) and check out the **[tracker website](http://pybolo.com)**.
 
 ### Current Status
-**July 22, 2024:** I am working on a standard tournament bot that will be used on the server to bootstrap multiplayer games. Thus far, I have implemented a C++ Python module that provides a custom A* bidirectional path planning (routing) algorithm. At the moment, I am creating the bot client and adding the logic.
+**August 2, 2024:** The bot path planning and route following code is complete and the bot now has basic functionality. Thus far, the bot can attack enemy tanks, capture neutral bases and refuel when needed. I am working on adding pill capture and placement, as well as LGM functionality. To make the bot competitive with different levels of human opponents, it can be given a configurable advantage.
 
 ### License information:
 PyBolo © Copyright 2024 Jonathan Cox, all rights reserved.
